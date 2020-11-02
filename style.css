@@ -1,0 +1,584 @@
+:root {
+  --main-blue: #1444a6;
+}
+/* base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* box sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+/* @media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+} */
+/* base styles */
+body {
+  font-family: 'CircularStd', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #444444;
+  background: #ffffff;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  border: 1px solid #1444a6;
+}
+.btn-primary {
+  background: #ffffff;
+  color: #1444a6;
+}
+.btn-primary:hover {
+  background: #1444a6;
+}
+.bg-light {
+  background-color: #ffffff !important;
+}
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#navbar li {
+  margin-right: 2rem;
+}
+#navbar li a {
+  color: #1444a6;
+  font-size: 1.5rem;
+}
+#navbar li a:hover {
+  color: #30c57b;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+}
+
+#section-1 h1 {
+  font-size: 5.49rem;
+  max-width: 450px;
+  color: #1444a6;
+  margin-top: 9rem;
+}
+#section-1 p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  max-width: 90%;
+}
+#section-1 .first-p {
+  margin: 1rem 0 3rem 0;
+}
+#section-1 .btn {
+  margin-top: 1rem;
+  padding: 1.75rem 5.5rem;
+  border-radius: 0.5rem;
+}
+#section-1 .btn-success {
+  background: #30c57b;
+  border: none;
+}
+#section-1 .btn:hover {
+  background: #ffffff;
+  border: 1px solid #1444a6;
+  color: #1444a6;
+}
+#section-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+#section-2 .security {
+  width: 90px;
+  margin-right: 3rem;
+}
+#section-2 h1 {
+  color: #1444a6;
+  margin-bottom: 1rem;
+}
+#section-2 p {
+  font-size: 1.5rem;
+}
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+#section-3 .parent-div {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  text-align: left;
+}
+#section-3 h1 {
+  color: #1444a6;
+  font-size: 3.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+#section-3 .fast {
+  margin: 5rem 0;
+}
+#section-3 h3 {
+  color: #1444a6;
+  font-weight: bold;
+}
+#section-3 p {
+  font-size: 1.5rem;
+}
+.homepage-img {
+  width: 29rem;
+}
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+#section-4 .how-it-works {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#section-4 .sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 3);
+  margin: 0.5rem;
+  border: 1px solid #e3ecff;
+  border-radius: 1rem;
+}
+#section-4 .works {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 6rem 2rem 2rem 2rem;
+}
+#section-4 .text-center h1 {
+  color: #1444a6;
+  font-weight: bold;
+  font-size: 3.8rem;
+}
+#section-4 .how-it-works h1 {
+  color: #1444a6;
+  font-weight: bold;
+  font-size: 3rem;
+  max-width: 180px;
+}
+#section-4 p {
+  font-size: 1.5rem;
+}
+.section-6 {
+  background: #1444a6;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+#section-6 .comments-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+#section-6 .rounds {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+#section-6 .roundss {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#section-6 img {
+  width: 85px;
+}
+#section-6 .kate {
+  border: 1px solid #ffffff;
+  width: 55%;
+  height: 100%;
+  text-align: left;
+  background: #ffffff;
+  color: #444444;
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 3.5rem 4rem;
+}
+#section-6 .newman h2 {
+  color: #1444a6;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+#section-6 .newman p {
+  font-size: 1.5rem;
+}
+#section-6 .text-success {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+#section-6 h1 {
+  margin: 9rem 0 3rem 0;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.section-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+#section-7 h1 {
+  color: #1444a6;
+  font-weight: bold;
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
+}
+#section-7 p {
+  font-size: 1.5rem;
+}
+#section-7 button {
+  margin-top: 2.25rem;
+}
+#section-7 button:hover {
+  background: rgb(42, 42, 175);
+}
+#section-7 .btn {
+  padding: 1.5rem 6rem;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+}
+#section-7 .btn-primary {
+  background: #1444a6;
+  color: #ffffff;
+}
+#section-7 .upper-content {
+  margin: 5rem 10rem;
+}
+#section-7 .lower-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem auto 0 auto;
+}
+#section-7 img {
+  width: 130px;
+  margin-bottom: 1.8rem;
+}
+#section-7 .lower-content p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+#section-7 .left-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 1rem;
+}
+#section-7 .right-flex {
+  margin-right: 3rem;
+}
+#section-7 a {
+  color: #000;
+  text-decoration: none;
+  margin: 0.5rem;
+  font-size: 1.4rem;
+}
+#section-7 h3 {
+  font-weight: bold;
+}
+footer p {
+  font-size: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .section-1,
+  .section-7 {
+    padding: 0 3rem;
+  }
+  footer p {
+    padding-left: 3rem;
+  }
+}
+@media (max-width: 1050px) {
+  #section-3 img {
+    display: none;
+  }
+  #section-3 .parent-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+}
+@media (max-width: 965px) {
+  #section-1 img {
+    display: none;
+  }
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #section-1 .grid-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #section-1 h1 {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #section-1 .btn {
+    margin-top: 1rem;
+    padding: 1.75rem 7.5rem;
+    border-radius: 0.5rem;
+  }
+}
+@media (max-width: 770px) {
+  #section-4 {
+    width: 100%;
+    height: 100%;
+    margin: 4rem 0;
+  }
+  #section-4 .text-center {
+    margin: 3.5rem;
+  }
+  #section-4 .text-center h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #section-4 .text-center p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #section-4 .how-it-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #section-4 .sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0.5rem;
+    border: 1px solid #e3ecff;
+    border-radius: 1rem;
+  }
+  #section-6 .comments-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 3rem;
+  }
+  #section-6 .rounds {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #section-6 .roundss {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #section-6 h1 {
+    margin: 9rem 0 3rem 0;
+    font-size: 2.9rem;
+    font-weight: bold;
+  }
+  #section-6 .kate {
+    border: 1px solid #ffffff;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    background: #ffffff;
+    color: #444444;
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 3.5rem 4rem;
+  }
+  .section-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  #section-7 .lower-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem auto 0 auto;
+  }
+  #section-7 .left-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 1rem;
+  }
+  #section-7 .right-grid img {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  #section-7 .right-grid p {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 510px) {
+  #section-1 {
+    height: 85vh;
+  }
+  #section-1 h1 {
+    font-size: 2.9rem;
+    max-width: 250px;
+  }
+  #section-1 p {
+    font-size: 1.25rem;
+  }
+  #section-2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #section-2 h1 {
+    font-size: 1.5rem;
+  }
+  #section-2 p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  #section-3 {
+    height: 100vh;
+    margin-top: 1rem;
+  }
+  #section-3 h1 {
+    font-size: 2.2rem;
+  }
+  #section-6 h1 {
+    font-size: 2rem;
+  }
+  #section-6 .kate p {
+    font-size: 1.25rem;
+  }
+  #section-6 .kate em {
+    font-size: 1rem;
+  }
+  #section-6 .kate h2 {
+    font-size: 1.3rem;
+  }
+  #section-6 .kate {
+    padding: 1.55rem 2rem;
+  }
+  #section-6 img {
+    width: 55px;
+  }
+  #section-7 .upper-content {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+  #section-7 h1 {
+    font-size: 1.9rem;
+  }
+  #section-7 .upper-content p {
+    font-size: 1.3rem;
+  }
+  footer p {
+    margin: 3rem;
+  }
+}
